@@ -1,0 +1,17 @@
+import ContactList from "./contactlist";
+
+const ContactRow = ({ setSelectedContactId, contact }) => {
+  <ContactList />
+  return (
+    <tr
+      onClick={() => {
+        setSelectedContactId(contact.id);
+      }}
+    >
+      <td>{contact.name}</td>
+      <td>{contact.email}</td>
+      <td>{contact.phone}</td>
+    </tr>
+  )
+}
+export default ContactRow
